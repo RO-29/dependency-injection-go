@@ -53,7 +53,7 @@ func newServiceA(dic *diContainter) *serviceA {
 }
 
 func newServiceADIProvider(dic *diContainter) func() *serviceA {
-	fmt.Println("** Init DIprovider A **")
+	fmt.Println("** Init DI Provider A **")
 	var a *serviceA
 	var mu sync.Mutex
 	return func() *serviceA {
@@ -84,7 +84,7 @@ func newServiceC(dic *diContainter) *serviceC {
 }
 
 func newServiceCDIProvider(dic *diContainter) func() *serviceC {
-	fmt.Println("** Init DIprovider C **")
+	fmt.Println("** Init DI Provider C **")
 	var c *serviceC
 	var mu sync.Mutex
 	return func() *serviceC {
@@ -113,7 +113,7 @@ func newServiceB(dic *diContainter) *serviceB {
 }
 
 func newServiceBDIProvider(dic *diContainter) func() *serviceB {
-	fmt.Println("** Init DIprovider B **")
+	fmt.Println("** Init DI Provider B **")
 	var b *serviceB
 	var mu sync.Mutex
 	return func() *serviceB {
